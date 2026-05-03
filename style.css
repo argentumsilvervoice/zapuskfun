@@ -437,13 +437,9 @@ a {
   grid-auto-flow: dense;
 }
 
-.photo-gallery .photo-card {
-  min-height: 100%;
-}
-
 .photo-gallery .photo-card img {
-  height: 100%;
-  min-height: 18rem;
+  height: auto;
+  min-height: 0;
 }
 
 .photo-gallery .gallery-tall img {
@@ -624,6 +620,15 @@ a {
 
   .photo-gallery .gallery-tall {
     grid-row: span 2;
+  }
+
+  .photo-gallery .photo-card {
+    min-height: 100%;
+  }
+
+  .photo-gallery .photo-card img {
+    height: 100%;
+    min-height: 18rem;
   }
 
   .testimonials {
